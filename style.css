@@ -1,0 +1,147 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.color {
+    background-color: rgb(232, 232, 232);
+}
+
+/* Section */
+section h2 {
+    color: rgb(49, 49, 49);
+    text-shadow: 1.5px 1.5px 2px rgba(255, 0, 0, 0.5),
+                -1.5px -1.5px 2px rgba(0, 34, 255, 0.5);     
+}
+
+section hr {
+    width: 250px;
+    border: 1px solid black;
+    background-color: black;
+    margin: auto;
+}
+/* --------------------------------- */
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    position: absolute;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 0.8em;
+    background-color: #333;
+}
+
+.footer p i {
+    color: red ;
+}
+
+.footer .youtube {
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    background-color: salmon;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .youtube:hover {
+    cursor: pointer;
+}
+/* ----------------------------------- */
+
+/* Jumbotron */
+.jumbotron {
+    height: 400px;
+    background-image: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -20px;
+    overflow: hidden;
+}
+
+.jumbotron h2, .jumbotron p{
+    color: white;
+    text-shadow: 1.5px 1.5px 2px rgba(255, 0, 0, 0.5),
+                -1.5px -1.5px 2px rgba(0, 34, 255, 0.5);   
+}
+/* --------------------------------- */
+
+/* Portofolio */
+.port {
+    position: relative;
+    background-color: #eaeaea;
+}
+
+.port img{
+    opacity: 0;
+    transform: translate(0, -30px);
+    transition: 0.7s all;
+}
+
+.port img:hover{
+    box-shadow: 1.5px 1.5px 2px 2px rgba(255, 0, 0, 0.5),
+                -1.5px -1.5px 2px 2px rgba(0, 34, 255, 0.5);
+}
+
+.port a{
+    transition: 1s all;
+}
+
+.port a:hover{
+    opacity: 0.5;
+}
+
+/* Jquery */
+.port img.showThumbnail {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.port .kolom {
+    position: static;
+}
+
+.port .kolom.zoomThumbnail{
+    position: absolute;
+    transform: scaleX(1.2) scaleY(1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+/* ------------------------------- */
+
+/* About */
+.about .pLeft {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s all;
+}
+
+.about .pRight {
+    opacity: 0;
+    transform: translate(50px, 0);
+    transition: 1s all;
+}
+
+.about .pLeft.showPLeft, .about .pRight.showPRight {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/* --------------------- */
+
+
